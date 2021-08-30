@@ -69,7 +69,7 @@ struct EmojiMemoryGameView: View {
     // the body of the game itself
     // (i.e. not include any of the control buttons or the deck)
     var gameBody: some View {
-        AspectVGrid(items: game.cards, aspectRatio: 2/3) { card in
+        AspectVGrid(items: game.cards, aspectRatio: CardConstants.aspectRatio) { card in
             if isUndealt(card) || (card.isMatched && !card.isFaceUp) {
                 Color.clear
             } else {

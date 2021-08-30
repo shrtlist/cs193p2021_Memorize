@@ -71,6 +71,6 @@ struct Cardify: AnimatableModifier {
 // purely syntactic sugar for views that want to use our Cardify view modifier
 extension View {
     func cardify(isFaceUp: Bool) -> some View {
-        self.modifier(Cardify(isFaceUp: isFaceUp))
+        modifier(Cardify(isFaceUp: isFaceUp))
     }
 }
